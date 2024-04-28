@@ -37,4 +37,4 @@ const buscarDonoPet = (lista: { nome: string, pets: string[] }[], nomePet: strin
     }
 }
 
-console.log(buscarDonoPet(usuarios, 'Pingo'));
+console.log(buscarDonoPet(usuarios, 'Lulu'));

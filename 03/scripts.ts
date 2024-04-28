@@ -1,17 +1,19 @@
-const tabuadas = (numeros: number[]): string => {
-    let resultado: string = '';
+const numeros: number[] = [1, 5, 2];
 
-    for (const n of numeros) {
-        for (let i = 0; i <= 10; i++) {
-            resultado += `${n} x ${i} = ${n * i} \n`;
+const tabuada = (numeros: number[]): string => {
+  let resultado: string = "";
 
-            if (i === 10) {
-                resultado += '------------------- \n'
-            }
-        }
+  for (const n of numeros) {
+    for (let i = 0; i <= 10; i++) {
+      resultado += `${n} X ${i} = ${n * i} \n`;
+
+      if (i === 10) {
+        resultado += "----------------- \n";
+      }
     }
+  }
 
-    return resultado;
-}
+  return resultado;
+};
 
-console.log(tabuadas([1, 7, 9, 5]));
+console.log(tabuada(numeros));
